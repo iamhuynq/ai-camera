@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 </head>
 
 <body class="text-md lg:text-xl">
     <!---------------------------- HEADER START HERE ---------------------------->
-    <div class="header text-lg">
-        <div class="container mx-auto flex justify-between h-[72px] items-center text-[#3B3B3B] gap-8 px-4 lg:px-0">
-            <img src="/images/logo.png" width="167" width="130" />
+    <div class="header text-sm">
+        <div class="my-container mx-auto flex justify-between h-[72px] items-center text-[#3B3B3B] gap-8 px-4 lg:px-0">
+            <img src="/images/logo.png" width="167" height="29" />
             <div class="hidden lg:flex items-center justify-between flex-1">
                 <a href="/">
                     Store
@@ -42,7 +42,6 @@
                 <a href="/">
                     Support
                 </a>
-                <img src="/images/uk.svg" />
                 <svg width="36" height="26" viewBox="0 0 36 26">
                     <use xlink:href="/images/sprites.svg#vn"></use>
                 </svg>
@@ -57,7 +56,8 @@
                 <use xlink:href="/images/sprites.svg#menu"></use>
             </svg>
         </div>
-        <div class="dropdown-menu hidden flex-col items-center py-4 gap-3 absolute z-100 top-[72px] left-0 w-full bg-white shadow-2xl">
+        <div
+            class="dropdown-menu hidden flex-col items-center py-4 gap-3 absolute z-100 top-[72px] left-0 w-full bg-white shadow-2xl">
             <a href="/">
                 Store
             </a>
@@ -83,7 +83,6 @@
                 Support
             </a>
             <div class="flex gap-4">
-                <img src="/images/uk.svg" />
                 <svg width="36" height="26" viewBox="0 0 36 26">
                     <use xlink:href="/images/sprites.svg#vn"></use>
                 </svg>
@@ -103,12 +102,12 @@
 
     <!---------------------------- BANNER START HERE ---------------------------->
     <div class="bg-[#001E3E] mb-14">
-        <div class="banner container mx-auto text-white py-[60px] bg-no-repeat bg-banner bg-contain px-4 lg:px-0">
+        <div class="banner my-container mx-auto text-white py-[60px] bg-no-repeat bg-banner bg-contain px-4 lg:px-0">
             <h1 class="font-bold uppercase lg:text-[36px]">Ai system</h1>
-            <p class="py-2">Make in Vietnam by OSG</p>
-            <h2 class="font-bold lg:text-[28px]">Nhà phát triển và vận hàng nền tảng Camera AI <br />hàng đầu về hiệu
+            <p class="py-2 text-lg">Make in Vietnam by OSG</p>
+            <h2 class="font-bold lg:text-2xl">Nhà phát triển và vận hàng nền tảng Camera AI <br />hàng đầu về hiệu
                 năng, tốc độ và độ chính xác.</h2>
-            <div class="flex gap-9 mt-8 text-sm lg:text-xl">
+            <div class="flex gap-9 mt-8 text-sm lg:text-lg">
                 <div>
                     <div class="flex items-center mb-4">
                         <img src="/images/3.png" class="mr-3" />
@@ -134,71 +133,52 @@
     </div>
     <!---------------------------- BANNER END HERE ---------------------------->
 
-    <div class="main px-4 lg:px-0">
-        <div class="container mx-auto">
-            <h2 class="text-[#220D74] font-bold text-center">AI SYSTEM là thương hiệu sản phẩm thiết bị và nền
+    <div class="main px-4 lg:px-0 overflow-hidden">
+        <div class="my-container mx-auto">
+            <h2 class="text-[#220D74] font-bold text-center text-[17px] block mb-14">AI SYSTEM là thương hiệu sản phẩm
+                thiết bị và nền
                 tảng Camera AI hàng đầu về
                 hiệu năng, tốc độ và độ chính xác.</h2>
-            <div class="flex flex-col lg:flex-row items-center justify-center mt-14 mb-14 gap-8 lg:gap-10">
-                <div class="flex items-center justify-center gap-8 lg:gap-10">
-                    <div class="flex items-center">
-                        <img src="/images/edge.png" class="mr-2.5" />
-                        Camera AI
-                    </div>
-                    <div class="flex items-center">
-                        <img src="/images/cloud.png" class="mr-2.5" />
-                        Cloud AI
-                    </div>
-                </div>
-                <div class="flex items-center justify-center gap-8 lg:gap-10">
-                    <div class="flex items-center">
-                        <img src="/images/house.png" class="mr-2.5" />
-                        On Premise
-                    </div>
-                    <div class="flex items-center">
-                        <img src="/images/setting.png" class="mr-2.5" />
-                        Customization
-                    </div>
-                </div>
-            </div>
 
             <!---------------------------- SECTION 1 START HERE ---------------------------->
             <strong class="text-[#486284] lg:text-[32px]">
                 <span class="text-[#E80000]">Store.</span>
                 Make in Vietnam by OSG
             </strong>
-            <div class="grid grid-cols-2 lg:grid-cols-10 mt-8 gap-4 lg:gap-16 text-[#3B3B3B] font-semibold mb-14">
+            <div class="grid grid-cols-4 lg:grid-cols-10 mt-8 gap-8 lg:gap-16 text-[#3B3B3B] font-semibold mb-14">
                 <div class="col-span-2 flex flex-col items-center">
-                    <div class="lg:aspect-square w-full relative mb-5">
+                    <div class="aspect-square w-full relative mb-5">
                         <img src="/images/camera-ai.png" class="lg:absolute lg:w-full lg:h-full top-0 left-0 mx-auto"
                             loading="lazy" />
                     </div>
                     Camera AI
                 </div>
                 <div class="col-span-2 flex flex-col items-center">
-                    <div class="lg:aspect-square w-full relative mb-5">
+                    <div class="aspect-square w-full relative mb-5">
                         <img src="/images/nvr-ai.png" class="lg:absolute lg:w-full lg:h-full top-0 left-0 mx-auto"
                             loading="lazy" />
                     </div>
                     NVR AI
                 </div>
                 <div class="col-span-2 flex flex-col items-center">
-                    <div class="lg:aspect-square w-full relative mb-5">
+                    <div class="aspect-square w-full relative mb-5">
                         <img src="/images/onpremise.png" class="lg:absolute lg:w-full lg:h-full top-0 left-0 mx-auto"
                             loading="lazy" />
                     </div>
                     On Premise
                 </div>
                 <div class="col-span-2 flex flex-col items-center">
-                    <div class="lg:aspect-square w-full relative mb-5">
-                        <img src="/images/accessies.png" class="lg:absolute lg:w-full top-1/2 lg:transform lg:-translate-y-1/2 left-0 mx-auto"
+                    <div class="aspect-square w-full relative mb-5">
+                        <img src="/images/accessies.png"
+                            class="absolute w-full top-1/2 transform -translate-y-1/2 left-0 mx-auto"
                             loading="lazy" />
                     </div>
                     Accessies
                 </div>
-                <div class="col-span-2 flex flex-col items-center">
+                <div class="col-span-4 lg:col-span-2 flex flex-col items-center">
                     <div class="lg:aspect-square w-full relative mb-5">
-                        <img src="/images/software.png" class="lg:absolute lg:w-full top-1/2 lg:transform lg:-translate-y-1/2 left-0 mx-auto"
+                        <img src="/images/software.png"
+                            class="lg:absolute lg:w-full top-1/2 lg:transform lg:-translate-y-1/2 left-0 mx-auto w-1/2"
                             loading="lazy" />
                     </div>
                     Sofware
@@ -213,112 +193,272 @@
                 <p class="mt-2">Use AI SYSTEM Platform</p>
             </strong>
             <a href="" class="text-[#737373] font-semibold">Xem tất cả dự án >></a>
-            <div class="grid grid-cols-4 lg:grid-cols-12 text-white text-center gap-4 xl:gap-16 mt-8 mb-8">
-                <div class="col-span-4">
-                    <div class="aspect-[362/295] relative overflow-hidden">
-                        <img src="/images/vinacomin.png"
-                            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+            <div class="glider-container" data-item-per-page="6">
+                <div class="glider -mx-5">
+                    <div
+                        class="grid grid-cols-4 lg:grid-cols-12 text-white text-center gap-4 xl:gap-8 mt-8 mb-8 px-5 content-start">
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/vinacomin.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Hệ thống Camera AI</p>
+                                <p class="uppercase font-bold my-2">Cđt: VINACOMIN</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    khovancampha-tkv.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/congan.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Nhận diện và truy vết đối tượng</p>
+                                <p class="uppercase font-bold my-2">CĐT: CAT Bình Thuận</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    cat-binhthuan.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/quany.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Điểm danh hội nghị</p>
+                                <p class="uppercase font-bold my-2">CĐT: Bệnh viện Quân Y 175</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    benhvienquany175.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/napas.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Checkin AI và thống kê</p>
+                                <p class="uppercase font-bold my-2">CĐT: NAPAS</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    napas.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/evn.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Kiểm soát vào ra AI</p>
+                                <p class="uppercase font-bold my-2">CĐT: EVN NPT</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    evnnpt-env.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/logistic.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Quản lý chấm công Camera AI</p>
+                                <p class="uppercase font-bold my-2">CĐT: Tân Nam CHinh</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    tannamchinh.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-[#00A0DD] py-2 overflow-hidden">
-                        <p>Hệ thống Camera AI</p>
-                        <p class="text-2xl uppercase font-bold my-2">Cđt: VINACOMIN</p>
-                        <div class="flex items-center justify-center whitespace-nowrap">
-                            <img src="/images/icon.png" class="mr-2.5" />
-                            khovancampha-tkv.aisystem.vn
+                    <div
+                        class="grid grid-cols-4 lg:grid-cols-12 text-white text-center gap-4 xl:gap-8 mt-8 mb-8 px-5 content-start">
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/vinacomin.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Hệ thống Camera AI</p>
+                                <p class="uppercase font-bold my-2">Cđt: VINACOMIN</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    khovancampha-tkv.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/congan.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Nhận diện và truy vết đối tượng</p>
+                                <p class="uppercase font-bold my-2">CĐT: CAT Bình Thuận</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    cat-binhthuan.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/quany.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Điểm danh hội nghị</p>
+                                <p class="uppercase font-bold my-2">CĐT: Bệnh viện Quân Y 175</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    benhvienquany175.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/napas.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Checkin AI và thống kê</p>
+                                <p class="uppercase font-bold my-2">CĐT: NAPAS</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    napas.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/evn.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Kiểm soát vào ra AI</p>
+                                <p class="uppercase font-bold my-2">CĐT: EVN NPT</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    evnnpt-env.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/logistic.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Quản lý chấm công Camera AI</p>
+                                <p class="uppercase font-bold my-2">CĐT: Tân Nam CHinh</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    tannamchinh.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="grid grid-cols-4 lg:grid-cols-12 text-white text-center gap-4 xl:gap-8 mt-8 mb-8 px-5 content-start">
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/vinacomin.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Hệ thống Camera AI</p>
+                                <p class="uppercase font-bold my-2">Cđt: VINACOMIN</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    khovancampha-tkv.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/congan.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Nhận diện và truy vết đối tượng</p>
+                                <p class="uppercase font-bold my-2">CĐT: CAT Bình Thuận</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    cat-binhthuan.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/quany.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Điểm danh hội nghị</p>
+                                <p class="uppercase font-bold my-2">CĐT: Bệnh viện Quân Y 175</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    benhvienquany175.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/napas.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Checkin AI và thống kê</p>
+                                <p class="uppercase font-bold my-2">CĐT: NAPAS</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    napas.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/evn.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Kiểm soát vào ra AI</p>
+                                <p class="uppercase font-bold my-2">CĐT: EVN NPT</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    evnnpt-env.aisystem.vn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 item">
+                            <div class="aspect-[362/295] relative overflow-hidden">
+                                <img src="/images/logistic.png"
+                                    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                            </div>
+                            <div class="bg-[#00A0DD] py-2 overflow-hidden text-base">
+                                <p>Quản lý chấm công Camera AI</p>
+                                <p class="uppercase font-bold my-2">CĐT: Tân Nam CHinh</p>
+                                <div class="flex items-center justify-center whitespace-nowrap">
+                                    <img src="/images/icon.png" class="mr-2.5" />
+                                    tannamchinh.aisystem.vn
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-4">
-                    <div class="aspect-[362/295] relative overflow-hidden">
-                        <img src="/images/congan.png"
-                            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
-                    </div>
-                    <div class="bg-[#00A0DD] py-2 overflow-hidden">
-                        <p>Nhận diện và truy vết đối tượng</p>
-                        <p class="text-2xl uppercase font-bold my-2">CĐT: CAT Bình Thuận</p>
-                        <div class="flex items-center justify-center whitespace-nowrap">
-                            <img src="/images/icon.png" class="mr-2.5" />
-                            cat-binhthuan.aisystem.vn
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="aspect-[362/295] relative overflow-hidden">
-                        <img src="/images/quany.png"
-                            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
-                    </div>
-                    <div class="bg-[#00A0DD] py-2 overflow-hidden">
-                        <p>Điểm danh hội nghị</p>
-                        <p class="text-2xl uppercase font-bold my-2">CĐT: Bệnh viện Quân Y 175</p>
-                        <div class="flex items-center justify-center whitespace-nowrap">
-                            <img src="/images/icon.png" class="mr-2.5" />
-                            benhvienquany175.aisystem.vn
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="aspect-[362/295] relative overflow-hidden">
-                        <img src="/images/napas.png"
-                            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
-                    </div>
-                    <div class="bg-[#00A0DD] py-2 overflow-hidden">
-                        <p>Checkin AI và thống kê</p>
-                        <p class="text-2xl uppercase font-bold my-2">CĐT: NAPAS</p>
-                        <div class="flex items-center justify-center whitespace-nowrap">
-                            <img src="/images/icon.png" class="mr-2.5" />
-                            napas.aisystem.vn
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="aspect-[362/295] relative overflow-hidden">
-                        <img src="/images/evn.png"
-                            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
-                    </div>
-                    <div class="bg-[#00A0DD] py-2 overflow-hidden">
-                        <p>Kiểm soát vào ra AI</p>
-                        <p class="text-2xl uppercase font-bold my-2">CĐT: EVN NPT</p>
-                        <div class="flex items-center justify-center whitespace-nowrap">
-                            <img src="/images/icon.png" class="mr-2.5" />
-                            evnnpt-env.aisystem.vn
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4">
-                    <div class="aspect-[362/295] relative overflow-hidden">
-                        <img src="/images/logistic.png"
-                            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
-                    </div>
-                    <div class="bg-[#00A0DD] py-2 overflow-hidden">
-                        <p>Quản lý chấm công Camera AI</p>
-                        <p class="text-2xl uppercase font-bold my-2">CĐT: Tân Nam CHinh</p>
-                        <div class="flex items-center justify-center whitespace-nowrap">
-                            <img src="/images/icon.png" class="mr-2.5" />
-                            tannamchinh.aisystem.vn
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex text-xs lg:text-base gap-1 lg:gap-2 items-center justify-center mb-14">
-                <div class="cursor-pointer w-8 h-8 flex items-center justify-center rounded-full border border-[#C7C7C7] transform rotate-180">
-                    <svg width="9" height="15" viewBox="0 0 16 28">
-                        <use xlink:href="/images/sprites.svg#arrow"></use>
-                    </svg>
-                </div>
-                <div class="cursor-pointer w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[#279BCD] text-[#279BCD] bg-[#E4F7FF]">1</div>
-                <div class="cursor-pointer w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[#C7C7C7]">2</div>
-                <div class="cursor-pointer w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[#C7C7C7]">3</div>
-                <div class="cursor-pointer w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[#C7C7C7]">4</div>
-                <div class="cursor-pointer w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[#C7C7C7]">5</div>
-                <svg width="26" height="28" viewBox="0 0 26 28">
-                    <use xlink:href="/images/sprites.svg#three-dots"></use>
-                </svg>
-                <div class="cursor-pointer w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[#C7C7C7]">10</div>
-                <div class="cursor-pointer w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[#C7C7C7]">11</div>
-                <div class="cursor-pointer w-8 h-8 flex items-center justify-center rounded-full border border-[#C7C7C7]">
-                    <svg width="9" height="15" viewBox="0 0 16 28">
-                        <use xlink:href="/images/sprites.svg#arrow"></use>
-                    </svg>
+                <!---------------------------- RENDER PAGINATION ---------------------------->
+                <div class="flex text-xs lg:text-base gap-1 lg:gap-2 items-center justify-center mb-14 pagination">
                 </div>
             </div>
             <!---------------------------- SECTION 2 END HERE ---------------------------->
@@ -327,67 +467,87 @@
             <strong class="text-[#E80000] lg:text-[32px]">
                 Deployment.
             </strong>
-            <div class="grid grid-cols-11 gap-2.5 mt-8 mb-14 relative">
-                <div class="col-span-11 lg:col-span-4">
-                    <div class="grid grid-cols-12 gap-2.5 mb-2.5">
-                        <div class="col-span-6 h-full rounded-lg overflow-hidden relative">
-                            <img src="/images/galery-1.png" class="w-full h-full object-cover"
-                                loading="lazy" />
-                            <div class="font-bold text-[32px] uppercase absolute bottom-2.5 left-2.5 text-white text-shadow">
-                                Napas
-                            </div>
+            <div class="glider-container" data-item-per-page="3">
+                <div class="glider -mx-5">
+                    <div class="grid grid-cols-12 gap-4 lg:gap-10 mt-8 mb-8 px-5 content-start">
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-1.png" />
+                            <strong class="uppercase text-[#575757]">Napas</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
                         </div>
-                        <div class="col-span-6">
-                            <img class="aspect-[101/75] mb-2.5 w-full rounded-lg object-cover"
-                                src="/images/galery-6.png"
-                                loading="lazy" />
-                            <img class="aspect-[101/75] w-full rounded-lg object-cover"
-                                src="/images/galery-7.png"
-                                loading="lazy" />
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-2.png" />
+                            <strong class="uppercase text-[#575757]">CAT BÌNH THUẬN</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-3.png" />
+                            <strong class="uppercase text-[#575757]">VINACOMIN</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-12 gap-2.5 relative">
-                        <div class="col-span-6">
-                            <img class="aspect-[101/75] mb-2.5 rounded-lg w-full object-cover"
-                                src="/images/galery-5.png"
-                                loading="lazy" />
-                            <img class="aspect-[101/75] rounded-lg w-full"
-                                src="/images/galery-9.png"
-                                loading="lazy" />
+                    <div class="grid grid-cols-12 gap-4 lg:gap-10 mt-8 mb-8 px-5 content-start">
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-1.png" />
+                            <strong class="uppercase text-[#575757]">Napas</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
                         </div>
-                        <img src="/images/galery-4.png"
-                            class="col-span-6 h-full object-cover rounded-lg object-left" loading="lazy" />
-                        <div class="font-bold text-[32px] uppercase absolute bottom-2.5 left-2.5 text-white text-shadow">
-                            CAT BÌNH THUẬN
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-2.png" />
+                            <strong class="uppercase text-[#575757]">CAT BÌNH THUẬN</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-3.png" />
+                            <strong class="uppercase text-[#575757]">VINACOMIN</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-4 lg:gap-10 mt-8 mb-8 px-5 content-start">
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-1.png" />
+                            <strong class="uppercase text-[#575757]">Napas</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-2.png" />
+                            <strong class="uppercase text-[#575757]">CAT BÌNH THUẬN</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 item">
+                            <img class="aspect-[31/20] object-cover w-full mb-1" src="/images/galery-3.png" />
+                            <strong class="uppercase text-[#575757]">VINACOMIN</strong>
+                            <p class="text-base text-[#8F8F8F]">12-12-2023</p>
                         </div>
                     </div>
                 </div>
-                <img src="/images/galery-8.jpeg"
-                    class="col-span-11 lg:col-span-3 h-full object-cover rounded-lg w-full" loading="lazy" />
-                <div class="col-span-11 lg:col-span-4 flex flex-col gap-2.5">
-                    <img src="/images/galery-3.png" class="flex-1 object-cover rounded-lg object-left" loading="lazy" />
-                    <img src="/images/galery-2.png" class="flex-1 object-cover rounded-lg" loading="lazy" />
-                </div>
-                <div class="absolute bottom-2.5 left-1/2 transform -translate-x-1/2 text-white text-shadow">
-                    <p class="text-[28px]">Hệ thống Camera AI</p>
-                    <p class="uppercase text-[58px] font-bold lg:my-6">VINACOMIN</p>
-                    <div class="flex items-center justify-center text-[22px]">
-                        <img src="/images/icon.png" class="mr-2.5" />
-                        khovancampha-tkv.aisystem.vn
-                    </div>
+                <!---------------------------- RENDER PAGINATION ---------------------------->
+                <div class="flex text-xs lg:text-base gap-1 lg:gap-2 items-center justify-center mb-14 pagination">
                 </div>
             </div>
             <!---------------------------- SECTION 3 END HERE ---------------------------->
 
 
             <!---------------------------- FOOTER START HERE ---------------------------->
-            <div class="footer grid grid-cols-6 lg:grid-cols-12 border-t-2 border-[##F3F3F3] py-14 lg:py-[70px]">
-                <div class="col-span-6 text-[#2D2D2D] lg:pr-36 mb-8 lg:mb-0">
-                    Let’s work together
-                    <p class="mt-10">This is a template Figma file, turned into code using Anima. Learn more at
-                        AnimaApp.com This is a
-                        template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-                    <div class="flex gap-4 mt-14">
+            <div class="footer flex flex-col lg:flex-row border-t-2 border-[#F3F3F3] py-14 lg:py-[70px]">
+                <div class="w-full lg:w-[56%] text-[#2D2D2D] lg:pr-6 mb-8 lg:mb-0 text-[13px]">
+                    <img src="/images/logo.png" width="247" height="43" />
+                    <p class="text-lg mt-1">Make in Vietnam by OSG</p>
+                    <strong class="uppercase lg:text-2xl block mt-8">CÔNG TY CP TẬP ĐOÀN ONE SYSTEM</strong>
+                    <p>Số 7 D2 TT4, Khu đô thị Bắc Linh Đàm, Phường Đại Kim, Quận Hoàng Mai, Hà Nội</p>
+                    <div class="flex items-center">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" class="mr-2.5">
+                            <use xlink:href="/images/sprites.svg#phone-black"></use>
+                        </svg>
+                        0357 280 688
+                    </div>
+                    <div class="flex items-center">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" class="mr-2.5">
+                            <use xlink:href="/images/sprites.svg#email-black"></use>
+                        </svg>
+                        ai@osg.asia
+                    </div>
+                    <div class="flex gap-4 my-6">
                         <a href="">
                             <svg width="36" height="36" viewBox="0 0 36 36">
                                 <use xlink:href="/images/sprites.svg#fb"></use>
@@ -403,8 +563,14 @@
                                 <use xlink:href="/images/sprites.svg#phone"></use>
                             </svg></a>
                     </div>
+                    <div class="flex items-center">Copyright
+                        <div
+                            class="flex items-center justify-center w-2.5 h-2.5 rounded-full border border-[#2D2D2D] mx-1">
+                            <span class="text-[10.5px]">c</span>
+                        </div> OSG 2023. All rights reserved.
+                    </div>
                 </div>
-                <div class="col-span-6">
+                <div class="w-full lg:w-[44%] overflow-hidden">
                     <input type="text" placeholder="Name"
                         class="block w-full bg-[#F3F3F3] outline-none px-7 py-5 rounded-lg mb-5" />
                     <input type="email" placeholder="Email"
@@ -417,6 +583,7 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="script.js"></script>
 </body>
 
